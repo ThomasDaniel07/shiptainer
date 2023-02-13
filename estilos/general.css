@@ -1,0 +1,43 @@
+.background-image-landing{
+  background-image: url('../imgs/landing.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.background-image-landing::before{
+  position: absolute;
+  content: "";
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  background: rgb(0,130,233);
+  background: linear-gradient(118deg, rgba(0,130,233,0.1600841020001751) 0%, rgba(0,29,64,1) 50%); 
+  opacity: .8;
+}
+.text-green {
+  color: #dafe55;
+}
+.text-blue {
+  color: #00023b;
+}
+.background-image-landing2{
+  background-image: url('../imgs/containerLanding.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.background-image-landing2::before{
+  position: absolute;
+  content: "";
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  background-color: #05164d;
+  opacity: .9;
+}

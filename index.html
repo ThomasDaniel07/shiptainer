@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f78029de96.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="estilos/general.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="imgs/logo.png">
+  <title>ContainerPage</title>
+</head>
+<body>
+  <main>
+    <section class="background-image-landing pb-20">
+      <div class="relative font-['poppins'] p-10 pl-20 flex items-center text-white">
+        <img src="imgs/logo.png" width="60px" alt="">
+        <h1 class="text-3xl font-bold ml-6 text-green">SHIPTAINER</h1>
+      </div>
+      <div class="flex flex-wrap relative w-[90%] m-auto justify-around">
+        <h2 class="text-white font-['poppins'] font-black text-5xl lg:text-6xl">El contenedor adecuado <br> <span class="text-4xl lg:text-6xl font-semibold">en el momento justo</span></h2>
+        <div class="bg-white mt-12 lg:mt-0 max-w-full lg:max-w-max lg:w-1/2 font-['poppins']">
+          <div class="bg-[#dafe55] font-['Montserrat'] p-4 text-center">
+            <p class="font-bold text lg:text-4xl text-blue">¡ALQUILA O COMPRA AQUI!</p>
+          </div>
+          <ul class="flex m-10 font-semibold text-center lg:text-start lg:text-2xl text-blue justify-around">
+            <li id="box_1" class="cursor-pointer select-none pb-2 border-b-2 border-[#00023b]">¿Que buscas?</li>
+            <li id="box_2" class="cursor-pointer select-none pb-2 border-b-2 ">¿Cuantos?</li>
+            <li id="box_3" class="cursor-pointer select-none pb-2 border-b-2 ">¿Quien?</li>
+            <li id="box_4" class="cursor-pointer select-none pb-2 border-b-2 ">Comentarios</li>
+          </ul>
+          <div id="box_input_1" class="flex w-4/5 m-auto flex-col">
+            <div class="text-blue">
+              <label for="" class="text-xl sm:text-2xl lg:text-3xl font-semibold">Tipo de contenedor*</label>
+              <div class="flex mt-6">
+                <div class="flex lg:text-2xl mr-4">
+                  <input type="checkbox" class="w-6 mr-4">
+                  <p class="font-medium">Contenedor maritimo</p>
+                </div>
+                <div class="flex lg:text-2xl">
+                  <input type="checkbox" class="w-6 mr-4">
+                  <p class="font-medium">Contenedor refrigerado</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-blue mt-8">
+              <label for="" class="text-xl lg:text-3xl font-bold">Selecciona modalidad*</label>
+              <div class="flex mt-6">
+                <div class="flex lg:text-2xl mr-4">
+                  <input type="checkbox" class="w-6 mr-4">
+                  <p class="font-medium">Alquilar</p>
+                </div>
+                <div class="flex lg:text-2xl">
+                  <input type="checkbox" class="w-6 mr-4">
+                  <p class="font-medium">Comprar</p>
+                </div>
+              </div>
+            </div>
+            <button id="btn_next_1" class="text-blue text-2xl p-2 text-end mt-10 mb-10 rigth-0 font-semibold">Siguiente <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div id="box_input_2" class="hidden w-4/5 m-auto flex-col">
+            <div class="text-blue">
+              <label for="" class="text-xl sm:text-2xl lg:text-3xl font-semibold">Cantidad de contenedores*</label>
+              <div class="flex flex-col mt-6">
+                <div class="flex lg:text-2xl mr-4">
+                  <p class="font-medium">Contenedores maritimo</p>
+                  <input type="number" class="w-20 ml-4 border-2 border-blue-800">
+                </div>
+                <div class="flex lg:text-2xl mt-10 mr-4">
+                  <p class="font-medium">Contenedores refrigerado</p>
+                  <input type="number" class="w-20 ml-4 border-2 border-blue-800">
+                </div>
+              </div>
+            </div>
+            <button id="btn_next_2" class="text-blue text-2xl p-2 text-end mt-10 mb-10 rigth-0 font-semibold">Siguiente <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div id="box_input_3" class="hidden w-4/5 m-auto flex-col">
+            <div class="text-blue">
+              <label for="" class="text-xl sm:text-2xl lg:text-3xl font-semibold">Nombre de la entidad*</label>
+              <div class="flex mt-6">
+                <div class="flex lg:text-2xl mr-4">
+                  <input type="text" class="mr-4 text-blue border-2 border-gray-600">
+                </div>
+              </div>
+            </div>
+            <button id="btn_next_3" class="text-blue text-2xl p-2 text-end mt-10 mb-10 rigth-0 font-semibold">Siguiente <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div id="box_input_4" class="hidden w-4/5 m-auto flex-col">
+            <div class="text-blue">
+              <label for="" class="text-xl sm:text-2xl lg:text-3xl font-semibold">Comentarios</label>
+              <div class="flex mt-6">
+                <div class="flex lg:text-2xl mr-4">
+                  <textarea class="min-w-[300px] max-w-[300px] min-h-[200px] max-h-[200px] border-2"></textarea>
+                </div>
+              </div>
+            </div>
+            <button id="btn_next_4" class="text-blue text-2xl p-2 text-end mt-10 mb-10 rigth-0 font-semibold">Enviar solicitud <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-20">
+      <div class="text-blue font-['poppins'] p-10 lg:p-20 lg:w-max m-auto">
+        <h3 class="text-center text-4xl lg:text-5xl font-bold">¿Cómo funciona Shiptainer?</h3>
+        <h4 class="text-center text-[#1e2c40] lg:text-xl mt-4">Así de fácil es obtener un contenedor con nosotros</h4>
+      </div>
+      <div class="mt-12 flex flex-wrap justify-around">
+        <div class="p-10 shadow-xl shadow-gray-400 rounded-lg flex flex-col justify-center items-center w-[500px] font-['poppins']">
+          <img src="./imgs/icon.png" alt="">
+          <p class="text-2xl text-center font-semibold mt-3">Solicita tu contenedor y obten <br> 
+            una oferta comercial</p>
+        </div>
+        <div class="p-10 shadow-xl shadow-gray-400 rounded-lg flex flex-col justify-center items-center w-[500px] font-['poppins']">
+          <img src="imgs/icon2.png" alt="">
+          <p class="text-2xl text-center font-semibold mt-3">Shiptainer retira <br>
+            el contenedor</p>
+        </div>
+        <div class="p-10 shadow-xl shadow-gray-400 rounded-lg flex flex-col justify-center items-center w-[500px] font-['poppins']">
+          <img src="imgs/icon3.png" alt="">
+          <p class="text-2xl text-center font-semibold mt-3">Nuevo uso,<br>
+            nuevo propósito</p>
+        </div>
+      </div>
+    </section>
+    <section class="mt-20 background-image-landing2 flex-wrap lg:h-[600px] flex items-center justify-around">
+      <img src="imgs/container.png" class="relative object-cover" alt="">
+      <div class="relative font-['poppins'] text-white w-4/5 pb-20 lg:pb-0 lg:w-1/3">
+        <h5 class="text-4xl text-center sm:text-start sm:text-5xl font-bold">Tipos de contenedores</h5>
+        <p class="mt-6 text-xl leading-loose">En Shiptainer ofrecemos una línea completa de contenedores secos
+          y refrigerados, nuevos y usados con más de 8 referencias aceptadas
+          a nivel mundial. Los contenedores cuentan con certificados de normas para transporte internacional
+          las cuales garantizan su operatividad. Somos proveedores directos a nivel internacional.</p>
+        <button class="w-max mt-5 uppercase pl-6 pr-6 p-3 font-semibold text-xl rounded-full text-blue bg-[#dafe55]">Quiero mi contenedor</button>
+      </div>
+    </section>
+    <section class="font-['poppins']">
+      <h5 class="text-blue text-5xl font-black text-center mt-10 p-16">Nuestros Productos</h5>
+      <article class="flex flex-wrap text-blue justify-around items-center">
+        <div class="w-4/5 lg:w-1/3 mb-20 lg:mb-0">
+          <p class="text-4xl font-semibold">Contenedores marítimos</p>
+          <ul class="mt-8 text-2xl">
+            <li><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>Proporcionamos contenedores para cualquier necesidad
+              adaptándonos a tu elección.</span></li>
+            <li class="mt-8"><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>Contamos con un gran stock de contenedores nuevos y
+              usados ubicados en las ciudades principales del país.</span></li>
+            <li class="mt-8"><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>Ofrecemos la entrega inmediata a precios competitivos.</span></li>
+            <li class="mt-8"><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>A través de nuestra operación mundial podemos entregar el
+              equipo en cualquier lugar.</span></li>
+          </ul>
+          <button class="w-max mt-6 uppercase pl-6 pr-6 p-3 font-semibold text-xl rounded-full bg-[#00023b] text-white">Quiero mi contenedor</button>
+        </div>
+        <img src="imgs/container2.png" alt="">
+      </article>
+      <article class="mt-32 flex flex-wrap text-blue justify-around items center">
+        <img src="imgs/container3.png" alt="">
+        <div class="w-4/5 lg:w-1/3 mt-20 lg:mt-0">
+          <p class="text-4xl font-semibold">Contenedores refrigerados</p>
+          <ul class="mt-8 text-2xl">
+            <li class="mt-8"><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>Poseemos unidades para transportar mercancías que
+              requieren condiciones de temperatura controlada.</span></li>
+            <li class="mt-8"><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>El propósito principal de estos contenedores es mantener la
+              mercancía a una temperatura entre <br> <br>
+              -25ºC y + 25ºC asegurando la calidad y frescura
+              de los productos perecederos.</span></li>
+            <li class="mt-8"><i class="fa-solid fa-circle-check text-3xl mr-5"></i><span>Nuestra experiencia en el mercado nos convierte en un
+              proveedor con</span></li>
+          </ul>
+          <button class="w-max mt-6 uppercase pl-6 pr-6 p-3 font-semibold text-xl rounded-full bg-[#00023b] text-white">Quiero mi contenedor</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="mt-32 flex bottom-0 text-center justify-center items-center p-8 bg-[#00023b] font-['poppins'] text-white">
+    <p class="text-2xl">2023 | Todos los derechos reservados</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
